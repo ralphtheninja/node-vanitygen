@@ -7,12 +7,14 @@ var spawn = require('child_process').spawn
  *   cb: f(err, result) where result is the resulting data from the operation:
  *       an array of public/private keys and elapsed time
  */
-module.exports = function (prefix, cb) {
+module.exports = vanitygen
+
+function vanitygen(prefix, cb) {
 
   var now = Date.now()
 
   var args = ['-q']
-  var vanity = spawn('./vanitygen', args.concat(prefix))
+  var vanity = spawn('vanitygen', args.concat(prefix))
 
   var buf = '', error
 
@@ -47,9 +49,10 @@ module.exports = function (prefix, cb) {
 }
 
 if (!module.parent) {
-  module.exports(['1LMS', '1LMP'], function (err, result) {
-  //module.exports(['11l', '1LMP'], function (err, result) {
-  //module.exports(['11l'], function (err, result) {
+  var prefix = ['1LMS', '1LMP']
+  //var prefix = ['1ll', '1LMP']
+  //var prefix = ['11l']
+  vanitygen(prefix, function (err, result) {
     if (err) return console.log(err)
     console.log(JSON.stringify(result))
   })

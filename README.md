@@ -1,6 +1,6 @@
 #node-vanitygen
 
-This is a quick hack to wrap [vanitygen](https://github.com/samr7/vanitygen) into node. Currently assumes you have a the vanitygen binary in the same directory. Yeah it sucks but I don't care about that right now. Later on it would be cool if the vanitygen source code could be bundled and built on the correct architecture.
+This is a quick hack to wrap [vanitygen](https://github.com/samr7/vanitygen) into node. Currently assumes you have a the vanitygen binary in your `$PATH`. Yeah it sucks but I don't care about that right now. Later on it would be cool if the vanitygen source code could be bundled and built on the correct architecture.
 
 ##Usage
 
