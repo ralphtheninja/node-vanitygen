@@ -1,0 +1,19 @@
+{
+    "name": "vanitygen"
+  , "description": "node wrapper around vanitygen"
+  , "keywords": []
+  , "version": "0.0.0"
+  , "author": "lms <ralphtheninja@riseup.net>"
+  , "repository": {
+        "url": "git://github.com/ralphtheninja/node-vanitygen.git"
+    }
+  , "main": "index.js"
+  , "scripts": {
+        "test": "tap --stderr ./test/*.js"
+    }
+  , "dependencies": {}
+  , "devDependencies": {
+        "tap": "~0.4.0"
+    }
+  , "license": "MIT"
+}
