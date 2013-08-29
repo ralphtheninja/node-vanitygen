@@ -9,7 +9,7 @@ Call vanitygen with an array of prefixes. Note that some prefixes are invalid, f
 ```js
 var vanitygen = require('vanitygen')
 vanitygen(['1LMS', '1LMP'], function (err, result) {
-	console.log(JSON.parse(results))
+	console.log(JSON.stringify(results))
 })
 ```
 
